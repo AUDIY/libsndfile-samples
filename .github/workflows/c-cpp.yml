@@ -1,0 +1,34 @@
+name: libsndfile-samples compile test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install libsndfile dependencies
+      run: |
+        sudo apt install autoconf autogen automake build-essential libasound2-dev \
+        libflac-dev libogg-dev libtool libvorbis-dev libopus-dev libmp3lame-dev \
+        libmpg123-dev pkg-config python3 python-is-python3
+    - name: Install libsndfile
+      run: |
+        git clone https://github.com/libsndfile/libsndfile.git
+        cd libsndfile
+        autoreconf -vif
+        ./configure --enable-werror
+        make
+        make check
+        sudo make install
+    - name: Compile samples
+      run: |
+        for file in `ls src`; do
+            gcc -Wall -Werror src/${file} -lsndfile
+        done
