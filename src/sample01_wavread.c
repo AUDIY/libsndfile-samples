@@ -48,7 +48,7 @@ int main(void) {
     memset(&sfinfo, 0, sizeof(sfinfo));
 
     /* Open audio file & get SF_INFO value */
-    sndfile = sf_open(filename, SFM_READ, &sfinfo);
+    sndfile = sf_open(filename, SFM_READ, sfinfo);
 
     /* Show the SF_INFO value */
     printf("Audio File Specifications\n");
