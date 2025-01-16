@@ -30,5 +30,6 @@ jobs:
     - name: Compile samples
       run: |
         for file in `ls src`; do
+            echo "gcc -Wall -Werror src/${file} -lsndfile"
             gcc -Wall -Werror src/${file} -lsndfile
         done
