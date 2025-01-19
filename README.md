@@ -3,6 +3,7 @@
 Samples for reading &amp; writing audio data which use [libsndfile](https://github.com/libsndfile/libsndfile).
 
 ## Sample lists
+libsndfile programming interface is described in [this link](http://libsndfile.github.io/libsndfile/api.html).
 |No.|File name|Description|Scope function|
 |:-:|:--------|:----------|:-------------|
 | 1 |sample01_readinfo.c|Print sfinfo members from sound file.|SNDFILE* sf_open(const char *path, int mode, SF_INFO *sfinfo);|
@@ -10,4 +11,3 @@ Samples for reading &amp; writing audio data which use [libsndfile](https://gith
 | 3 |sample03_seek.c|Print the amplitude of seeked data.|sf_count_t sf_seek(SNDFILE *sndfile, sf_count_t frames, int whence);|
 | 4 |sample04_errorcheck.c|Check whether sndfile struct is valid on NOT.|int sf_error(SNDFILE *sndfile);|
 
-libsndfile programming interface is described in [this link](http://libsndfile.github.io/libsndfile/api.html).
