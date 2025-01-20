@@ -64,11 +64,19 @@ int main(void) {
 
     /* Print the data */
     for (long int i = 0; i < sfinfo.frames; i++) {
-        printf("Left[%ld]: \t%6d ", i, *ptr);
-        ptr++;
-        printf("\tRight[%ld]: \t%6d\n", i, *ptr);
-        ptr++;
+        if (sfinfo.channels == 1) {
+            /* Monoaural Data */
+            printf("Mono[%ld]: \t%6d\n", i, *ptr);
+            ptr++;
+        } else if (sfinfo.channels == 2) {
+            /* Stereo Data */
+            printf("Left[%ld]: \t%6d ", i, *ptr);
+            ptr++;
+            printf("\tRight[%ld]: \t%6d\n", i, *ptr);
+            ptr++;
+        }
     }
+    
 
     /* Put the ptr pointer to the head */
     ptr = headptr;
