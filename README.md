@@ -18,3 +18,5 @@ libsndfile programming interface is described in [this link](http://libsndfile.g
 | 4 |sample04_errorcheck.c|Check whether sndfile struct is valid or NOT.|int sf_error(SNDFILE *sndfile);|
 | 5 |sample05_readshort.c|Read the audio data as short data type.|sf_count_t sf_read_short(SNDFILE *sndfile, short *ptr, sf_count_t items);|
 | 6 |sample06_readfshort.c|Read the audio data as short data type.|sf_count_t sf_readf_short(SNDFILE *sndfile, short *ptr, sf_count_t frames);|
+| 7 |sample07_readint.c|Read the audio data as int data type.|sf_count_t sf_read_int(SNDFILE *sndfile, int *ptr, sf_count_t items);|
+| 8 |sample08_readfint.c|Read the audio data as int data type.|sf_count_t sf_readf_int(SNDFILE *sndfile, int *ptr, sf_count_t frames);|
