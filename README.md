@@ -3,9 +3,10 @@
 Samples for reading &amp; writing audio data which use [libsndfile](https://github.com/libsndfile/libsndfile).
 
 ## Overview
-This is the samples to programmers make understand who use [libsndfile](https://github.com/libsndfile/libsndfile).
+This is the samples which use [libsndfile](https://github.com/libsndfile/libsndfile).  
 These samples are used basic functions in the libsndfile programming interface.  
-
+I wish it makes the programmer understood how to use libsndfile.  
+Issues, Pull requests, Stars and Forks are welcome!  
 
 ## Sample lists
 libsndfile programming interface is described in [this link](http://libsndfile.github.io/libsndfile/api.html).
