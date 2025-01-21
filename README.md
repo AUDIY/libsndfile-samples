@@ -2,6 +2,12 @@
 [![libsndfile-samples compile test](https://github.com/AUDIY/libsndfile-samples/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/AUDIY/libsndfile-samples/actions/workflows/c-cpp.yml)  
 Samples for reading &amp; writing audio data which use [libsndfile](https://github.com/libsndfile/libsndfile).
 
+## Overview
+This is the samples which use [libsndfile](https://github.com/libsndfile/libsndfile).  
+These samples are used basic functions in the [libsndfile programming interface](http://libsndfile.github.io/libsndfile/api.html).  
+I wish it makes the programmer understood how to use libsndfile.  
+Issues, Pull requests, Stars and Forks are welcome!  
+
 ## Sample lists
 libsndfile programming interface is described in [this link](http://libsndfile.github.io/libsndfile/api.html).
 |No.|File name|Description|Scope function|
