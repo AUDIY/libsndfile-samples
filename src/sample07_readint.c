@@ -47,7 +47,7 @@ int main(void) {
     int       *headptr ;
 
     /* Input filename here */
-    char *filename = "./TestSound_44100_16_Mono.wav";
+    char *filename = "./TestSound_44100_16.wav";
 
     /* Open audio file & get SF_INFO value */
     sndfile = sf_open(filename, SFM_READ, &sfinfo);
