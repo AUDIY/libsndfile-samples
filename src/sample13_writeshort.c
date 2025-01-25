@@ -51,6 +51,7 @@ int main(void) {
 
     int       seconds ; // Playing time [s]
     int       freq    ; // Play frequency [Hz]
+    sf_count_t frames;
     long  int items   ; // frames * channels
     short     *ptr    ; // Short type data array 
     short     *headptr; // Head pointer of *ptr
@@ -65,19 +66,19 @@ int main(void) {
     seconds = 5; // seconds
     freq = 1000; // Hz
 
-    sfinfoW.samplerate = 44100;                            // Sampling frequency
-    sfinfoW.channels   = 2;                                // Channels
-    sfinfoW.format     = SF_FORMAT_WAV | SF_FORMAT_PCM_16; // 16bit WAV.
-    sfinfoW.frames     = sfinfoW.samplerate * seconds + 1;
+    sfinfoW.samplerate = 44100;                            // Sampling frequency (necessary)
+    sfinfoW.channels   = 2;                                // Channels (necessary)
+    sfinfoW.format     = SF_FORMAT_WAV | SF_FORMAT_PCM_16; // 16bit WAV (necessary)
     
-    items = sfinfoW.frames * sfinfoW.channels;
+    frames = sfinfoW.samplerate * seconds + 1;
+    items  = frames * sfinfoW.channels;
 
     /* Initialize the *ptr array */
     ptr = (short *)calloc(items, sizeof(short));
     headptr = ptr;
 
     /* Generate the data array */
-    for (long int i = 0; i < sfinfoW.frames; i++) {
+    for (long int i = 0; i < frames; i++) {
         if (sfinfoW.channels == 1) {
             // Mono: Sine wave
             *ptr = (short)(SHRT_MAX * sin(2 * M_PI * ((double)i/sfinfoW.samplerate) * freq));
