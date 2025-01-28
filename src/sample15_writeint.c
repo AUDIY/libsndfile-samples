@@ -119,7 +119,7 @@ int main(void) {
     ptr = (int *)calloc(items, sizeof(int));
     headptr = ptr;
 
-    /* Read the audio data by short type */
+    /* Read the audio data by int type */
     sf_read_int(sndfileR, ptr, items);
 
     /* Print the data */
