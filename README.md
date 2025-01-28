@@ -26,3 +26,4 @@ libsndfile programming interface is described in [this link](http://libsndfile.g
 | 12 |sample12_readfdouble.c|Read the audio data as double data type.|sf_count_t sf_readf_double(SNDFILE *sndfile, double *ptr, sf_count_t frames);|
 | 13 |sample13_writeshort.c|Write audio data from short data type.|sf_count_t sf_write_short(SNDFILE *sndfile, short *ptr, sf_count_t items);|
 | 14 |sample14_writefshort.c|Write audio data from short data type.|sf_count_t sf_writef_short(SNDFILE *sndfile, short *ptr, sf_count_t frames);|
+| 15 |sample15_writeint.c|Write audio data from int data type.|sf_count_t sf_write_int(SNDFILE *sndfile, int *ptr, sf_count_t items);|
