@@ -68,7 +68,7 @@ int main(void) {
 
     sfinfoW.samplerate = 44100;                            // Sampling frequency (necessary)
     sfinfoW.channels   = 2;                                // Channels (necessary)
-    sfinfoW.format     = SF_FORMAT_WAV | SF_FORMAT_PCM_32; // Format (necessary)
+    sfinfoW.format     = SF_FORMAT_WAV | SF_FORMAT_PCM_24; // Format (necessary)
     
     frames = sfinfoW.samplerate * seconds + 1;
     items  = frames * sfinfoW.channels;
