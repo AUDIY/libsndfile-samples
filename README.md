@@ -31,3 +31,4 @@ libsndfile programming interface is described in [this link](http://libsndfile.g
 | 17 |sample17_writefloat.c|Write audio data from float data type.|sf_count_t sf_write_float(SNDFILE *sndfile, float *ptr, sf_count_t items);|
 | 18 |sample18_writeffloat.c|Write audio data from float data type.|sf_count_t sf_writef_float(SNDFILE *sndfile, float *ptr, sf_count_t frames);|
 | 19 |sample19_writedouble.c|Write audio data from double data type.|sf_count_t sf_write_double(SNDFILE *sndfile, double *ptr, sf_count_t items);|
+| 20 |sample20_writefdouble.c|Write audio data from double data type.|sf_count_t sf_writef_double(SNDFILE *sndfile, double *ptr, sf_count_t frames);|
