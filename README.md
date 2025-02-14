@@ -35,3 +35,4 @@ libsndfile programming interface is described in [this link](http://libsndfile.g
 | 21 |sample21_setstring.c|Add basic string metadata to the written audio file.|int sf_set_string(SNDFILE *sndfile, int str_type, const char *str);|
 | 22 |sample22_getstring.c|Get basic string metadata to the written audio file.|const char* sf_get_string(SNDFILE *sndfile, int str_type);|
 | 23 |sample23_versionstring.c|Get libsndfile version string.|const char *sf_version_string(void);|
+| 24 |sample24_byterate.c|Return the current byterate at this point in the file.|int sf_current_byterate(SNDFILE *sndfile);|
