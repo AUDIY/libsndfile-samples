@@ -78,10 +78,10 @@ int main(void) {
 
     /* Generate original "Test" chunk */
     memset(&chunkinfo, 0, sizeof(chunkinfo));
-    snprintf(chunkinfo.id, sizeof (chunkinfo.id), "Test") ;
-	chunkinfo.id_size = 4 ;
-	chunkinfo.data    = strdup(testdata) ;
-	chunkinfo.datalen = strlen(chunkinfo.data) ;
+    snprintf(chunkinfo.id, sizeof(chunkinfo.id), "Test");
+    chunkinfo.id_size = 4;
+    chunkinfo.data    = strdup(testdata);
+    chunkinfo.datalen = strlen(chunkinfo.data);
 
     /* Add "Test" chunk & write audio data. */
     err = sf_set_chunk (sndfileW, &chunkinfo) ;
