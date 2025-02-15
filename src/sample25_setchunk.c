@@ -85,7 +85,7 @@ int main(void) {
 
     /* Add "Test" chunk & write audio data. */
     err = sf_set_chunk (sndfileW, &chunkinfo) ;
-    //printf("%d\n", (err == SF_ERR_NO_ERROR));
+    printf("Error status: %s\n", sf_errot_number(err));
     ptrR = headR;
     sf_write_short(sndfileW, ptrR, items);
 
