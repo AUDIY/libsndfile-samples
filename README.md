@@ -37,3 +37,4 @@ libsndfile programming interface is described in [this link](http://libsndfile.g
 | 23 |sample23_versionstring.c|Get libsndfile version string.|const char *sf_version_string(void);|
 | 24 |sample24_byterate.c|Return the current byterate at this point in the file.|int sf_current_byterate(SNDFILE *sndfile);|
 | 25 |sample25_setchunk.c|Set the specified chunk info.|int sf_set_chunk(SNDFILE *sndfile, const SF_CHUNK_INFO *chunk_info);|
+| 26 |sample26_getchunkiterator.c|Get an iterator for all chunks matching chunk_info.|SF_CHUNK_ITERATOR *sf_get_chunk_iterator(SNDFILE *sndfile, const SF_CHUNK_INFO *chunk_info);|
