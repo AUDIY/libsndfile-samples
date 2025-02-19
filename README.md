@@ -40,3 +40,4 @@ libsndfile programming interface is described in [this link](http://libsndfile.g
 | 26 |sample26_getchunkiterator.c|Get an iterator for all chunks matching chunk_info.|SF_CHUNK_ITERATOR *sf_get_chunk_iterator(SNDFILE *sndfile, const SF_CHUNK_INFO *chunk_info);|
 | 27 |sample27_getchunksize.c|Get the size of the specified chunk.|int sf_get_chunk_size(const SF_CHUNK_ITERATOR *it, SF_CHUNK_INFO *chunk_info);|
 | 28 |sample28_getchunkdata.c|Get the specified chunk data.|int sf_get_chunk_data(const SF_CHUNK_ITERATOR *it, SF_CHUNK_INFO *chunk_info);|
+| 29 |sample29_nextchunkiterator.c|Iterate through chunks by incrementing the iterator.|SF_CHUNK_ITERATOR *sf_next_chunk_iterator (SF_CHUNK_ITERATOR *iterator);|
