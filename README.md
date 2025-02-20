@@ -41,3 +41,4 @@ libsndfile programming interface is described in [this link](http://libsndfile.g
 | 27 |sample27_getchunksize.c|Get the size of the specified chunk.|int sf_get_chunk_size(const SF_CHUNK_ITERATOR *it, SF_CHUNK_INFO *chunk_info);|
 | 28 |sample28_getchunkdata.c|Get the specified chunk data.|int sf_get_chunk_data(const SF_CHUNK_ITERATOR *it, SF_CHUNK_INFO *chunk_info);|
 | 29 |sample29_nextchunkiterator.c|Iterate through chunks by incrementing the iterator.|SF_CHUNK_ITERATOR *sf_next_chunk_iterator (SF_CHUNK_ITERATOR *iterator);|
+| 30 |sample30_errornumber.c|Convert error number to string.|const char *sf_error_number(int errnum);|
