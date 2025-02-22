@@ -41,4 +41,15 @@ libsndfile programming interface is described in [this link](http://libsndfile.g
 | 27 |sample27_getchunksize.c|Get the size of the specified chunk.|int sf_get_chunk_size(const SF_CHUNK_ITERATOR *it, SF_CHUNK_INFO *chunk_info);|
 | 28 |sample28_getchunkdata.c|Get the specified chunk data.|int sf_get_chunk_data(const SF_CHUNK_ITERATOR *it, SF_CHUNK_INFO *chunk_info);|
 | 29 |sample29_nextchunkiterator.c|Iterate through chunks by incrementing the iterator.|SF_CHUNK_ITERATOR *sf_next_chunk_iterator (SF_CHUNK_ITERATOR *iterator);|
-| 30 |sample30_errornumber.c|Convert error number to string.|const char *sf_error_number(int errnum);|
+| 30 |sample30_errornumber.c|Convert error number to string.|const char *sf_error_number(int errnum);|  
+
+## Audio files
+This is the list of audio files used with the above samples.
+|No.|File name|Format|Channel|Sample rate(Hz)|Bits|Description|
+|:-:|:--------|:----:|:-----:|:-------------:|:--:|:----------|
+| 1 |Fox.wav|WAV|2|44100|16|The file embedded string chunk as "Test" chunk.|
+| 2 |Getstring.flac|FLAC|2|44100|16|The file embedded some metadata.|
+| 3 |TestSound_44100_16.wav|2|WAV|44100|16|The file with 1000Hz Test tone|
+| 4 |TestSound_48000_8_Mono.wav|1|WAV|44100|8|The file with 1000Hz Test tone|
+| 5 |TestSound_96000_24_Mono.wav|1|WAV|96000|24|The file with 1000Hz Test tone|
+| 6 |TestSound_96000_24_Stereo.flac|2|WAV|96000|24|The "FLAC" file with 1000Hz Test tone|
