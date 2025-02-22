@@ -27,6 +27,9 @@ jobs:
         make
         make check
         sudo make install
+    - name: Compiler version
+      run: |
+        gcc --version
     - name: Compile samples
       run: |
         for file in `ls src`; do
