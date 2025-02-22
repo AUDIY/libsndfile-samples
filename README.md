@@ -49,7 +49,7 @@ This is the list of audio files used with the above samples.
 |:-:|:--------|:----:|:-----:|:-------------:|:--:|:----------|
 | 1 |Fox.wav|WAV|2|44100|16|The file embedded string chunk as "Test" chunk.|
 | 2 |Getstring.flac|FLAC|2|44100|16|The file embedded some metadata.|
-| 3 |TestSound_44100_16.wav|WAV|2|44100|16|The file with 1000Hz Test tone|
-| 4 |TestSound_48000_8_Mono.wav|WAV|1|44100|8|The file with 1000Hz Test tone|
-| 5 |TestSound_96000_24_Mono.wav|WAV|1|96000|24|The file with 1000Hz Test tone|
+| 3 |TestSound_44100_16.wav|WAV|2|44100|16|The file with 1000Hz Test tone.|
+| 4 |TestSound_48000_8_Mono.wav|WAV|1|44100|8|The file with 1000Hz Test tone.|
+| 5 |TestSound_96000_24_Mono.wav|WAV|1|96000|24|The file with 1000Hz Test tone.|
 | 6 |TestSound_96000_24_Stereo.flac|WAV|2|96000|24|The "FLAC" file with 1000Hz Test tone|
