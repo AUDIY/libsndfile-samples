@@ -1,7 +1,7 @@
 /* sample07_readint.c */
 
 /*
-** Copyright (C) 2025 AUDIY.
+** Copyright (C) 2025 - 2026 AUDIY.
 **
 ** All rights reserved.
 **
